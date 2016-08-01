@@ -44,33 +44,33 @@
 		<h1>Merging Image Boxes <span>with jQuery</span></h1>
 		<div class="description">Click on the thumbs or the large image</div>
 		<div id="im_wrapper" class="im_wrapper">
-			<div style="background-position:0px 0px;"><img src="images/thumbs/1.jpg" alt="" /></div>
-			<div style="background-position:-125px 0px;"><img src="images/thumbs/2.jpg" alt="" /></div>
-			<div style="background-position:-250px 0px;"><img src="images/thumbs/3.jpg" alt="" /></div>
-			<div style="background-position:-375px 0px;"><img src="images/thumbs/4.jpg" alt="" /></div>
-			<div style="background-position:-500px 0px;"><img src="images/thumbs/5.jpg" alt="" /></div>
-			<div style="background-position:-625px 0px;"><img src="images/thumbs/6.jpg" alt="" /></div>
+			<div style="background-position:0px 0px;"><img src="images/thumbs/1.png" alt="" /></div>
+			<div style="background-position:-125px 0px;"><img src="images/thumbs/2.png" alt="" /></div>
+			<div style="background-position:-250px 0px;"><img src="images/thumbs/3.png" alt="" /></div>
+			<div style="background-position:-375px 0px;"><img src="images/thumbs/4.png" alt="" /></div>
+			<div style="background-position:-500px 0px;"><img src="images/thumbs/5.png" alt="" /></div>
+			<div style="background-position:-625px 0px;"><img src="images/thumbs/6.png" alt="" /></div>
 
-			<div style="background-position:0px -125px;"><img src="images/thumbs/7.jpg" alt="" /></div>
-			<div style="background-position:-125px -125px;"><img src="images/thumbs/8.jpg" alt="" /></div>
-			<div style="background-position:-250px -125px;"><img src="images/thumbs/9.jpg" alt="" /></div>
-			<div style="background-position:-375px -125px;"><img src="images/thumbs/10.jpg" alt="" /></div>
-			<div style="background-position:-500px -125px;"><img src="images/thumbs/11.jpg" alt="" /></div>
-			<div style="background-position:-625px -125px;"><img src="images/thumbs/12.jpg" alt="" /></div>
+			<div style="background-position:0px -125px;"><img src="images/thumbs/7.png" alt="" /></div>
+			<div style="background-position:-125px -125px;"><img src="images/thumbs/8.png" alt="" /></div>
+			<div style="background-position:-250px -125px;"><img src="images/thumbs/9.png" alt="" /></div>
+			<div style="background-position:-375px -125px;"><img src="images/thumbs/10.png" alt="" /></div>
+			<div style="background-position:-500px -125px;"><img src="images/thumbs/11.png" alt="" /></div>
+			<div style="background-position:-625px -125px;"><img src="images/thumbs/12.png" alt="" /></div>
 
-			<div style="background-position:0px -250px;"><img src="images/thumbs/13.jpg" alt="" /></div>
-			<div style="background-position:-125px -250px;"><img src="images/thumbs/14.jpg" alt="" /></div>
-			<div style="background-position:-250px -250px;"><img src="images/thumbs/15.jpg" alt="" /></div>
-			<div style="background-position:-375px -250px;"><img src="images/thumbs/16.jpg" alt="" /></div>
-			<div style="background-position:-500px -250px;"><img src="images/thumbs/17.jpg" alt="" /></div>
-			<div style="background-position:-625px -250px;"><img src="images/thumbs/18.jpg" alt="" /></div>
+			<div style="background-position:0px -250px;"><img src="images/thumbs/13.png" alt="" /></div>
+			<div style="background-position:-125px -250px;"><img src="images/thumbs/14.png" alt="" /></div>
+			<div style="background-position:-250px -250px;"><img src="images/thumbs/15.png" alt="" /></div>
+			<div style="background-position:-375px -250px;"><img src="images/thumbs/16.png" alt="" /></div>
+			<div style="background-position:-500px -250px;"><img src="images/thumbs/17.png" alt="" /></div>
+			<div style="background-position:-625px -250px;"><img src="images/thumbs/18.png" alt="" /></div>
 
-			<div style="background-position:0px -375px;"><img src="images/thumbs/19.jpg" alt="" /></div>
-			<div style="background-position:-125px -375px;"><img src="images/thumbs/20.jpg" alt="" /></div>
-			<div style="background-position:-250px -375px;"><img src="images/thumbs/21.jpg" alt="" /></div>
-			<div style="background-position:-375px -375px;"><img src="images/thumbs/22.jpg" alt="" /></div>
-			<div style="background-position:-500px -375px;"><img src="images/thumbs/23.jpg" alt="" /></div>
-			<div style="background-position:-625px -375px;"><img src="images/thumbs/24.jpg" alt="" /></div>
+			<div style="background-position:0px -375px;"><img src="images/thumbs/19.png" alt="" /></div>
+			<div style="background-position:-125px -375px;"><img src="images/thumbs/20.png" alt="" /></div>
+			<div style="background-position:-250px -375px;"><img src="images/thumbs/21.png" alt="" /></div>
+			<div style="background-position:-375px -375px;"><img src="images/thumbs/22.png" alt="" /></div>
+			<div style="background-position:-500px -375px;"><img src="images/thumbs/23.png" alt="" /></div>
+			<div style="background-position:-625px -375px;"><img src="images/thumbs/24.png" alt="" /></div>
 		</div>
 		<div id="im_loading" class="im_loading"></div>
 		<div id="im_next" class="im_next"></div>
@@ -110,7 +110,7 @@
 				jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 			})(jQuery,'smartresize');
 		</script>
-        <script type="text/javascript">	
+        <script type="text/javascript">
             $(function() {
 				//check if the user made the
 				//mistake to open it with IE
@@ -145,8 +145,8 @@
 				var positionsArray = [];
 				for(var i = 0; i < nmb_thumbs; ++i)
 					positionsArray[i]=i;
-				
-				
+
+
 				//preload all the images
 				$im_loading.show();
 				var loaded		= 0;
@@ -163,14 +163,14 @@
 							start();
 					}).attr('src',$this.attr('src').replace('/thumbs',''));
 				});
-				
+
 				//starts the animation
 				function start(){
 					$im_loading.hide();
 					//disperse the thumbs in a grid
 					disperse();
 				}
-				
+
 				//disperses the thumbs in a grid based on windows dimentions
 				function disperse(){
 					if(!flg_click) return;
@@ -226,14 +226,14 @@
 						});
 					});
 				}
-				
+
 				//controls if we can click on the thumbs or not
 				//if theres an animation in progress
 				//we don't want the user to be able to click
 				function setflag(){
 					flg_click = !flg_click
 				}
-				
+
 				/*
 				when we click on a thumb, we want to merge them
 				and show the full image that was clicked.
@@ -248,15 +248,15 @@
 				$thumbs.bind('click',function(){
 					if(!flg_click) return;
 					setflag();
-					
+
 					var $this 		= $(this);
 					current 		= $this.index();
-					
+
 					if(mode	== 'grid'){
 						mode			= 'single';
 						//the source of the full image
 						var image_src	= $this.find('img').attr('src').replace('/thumbs','');
-						
+
 						$thumbs.each(function(i){
 							var $thumb 	= $(this);
 							var $image 	= $thumb.find('img');
@@ -311,24 +311,24 @@
 						disperse();
 					}
 				});
-				
+
 				//removes the navigation buttons
 				function removeNavigation(){
 					$im_next.stop().animate({'right':'-50px'},300);
 					$im_prev.stop().animate({'left':'-50px'},300);
 				}
-				
+
 				//add the navigation buttons
 				function addNavigation(){
 					$im_next.stop().animate({'right':'0px'},300);
 					$im_prev.stop().animate({'left':'0px'},300);
 				}
-				
+
 				//User clicks next button (single mode)
 				$im_next.bind('click',function(){
 					if(!flg_click) return;
 					setflag();
-					
+
 					++current;
 					var $next_thumb	= $im_wrapper.children('div:nth-child('+(current+1)+')');
 					if($next_thumb.length>0){
@@ -353,7 +353,7 @@
 						return;
 					}
 				});
-				
+
 				//User clicks prev button (single mode)
 				$im_prev.bind('click',function(){
 					if(!flg_click) return;
@@ -380,13 +380,13 @@
 						return;
 					}
 				});
-				
+
 				//on windows resize call the disperse function
 				$(window).smartresize(function(){
 					removeNavigation()
 					disperse();
 				});
-				
+
 				//function to shuffle an array
 				Array.shuffle = function( array ){
 					for(
